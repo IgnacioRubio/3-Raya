@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	
+
+	<meta charset="UTF-8">
+	<title>3 en raya</title>
+	
+	<style>
+	
+		h1{
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			color: white;
+			font-size: 40px;
+			font-style: normal;
+			font-variant: normal;
+			font-weight: bold;
+			line-height: 26.4px;
+			background-color: #0099cc;
+			padding: 20px;
+			width: 450px;
+		}
+		
+		#contenedor1{
+			margin-top: 20px;
+			background-color: #008CBA;
+			width: 250px;
+		}
+		
+		.bJuego{
+			padding: 30px; 
+			margin: 10px;
+			border-style: none; 
+			background-color: white;
+		}
+
+		#bX, #bO{
+			background-image: url('img/x.png');
+			background-repeat: no-repeat;
+			background-position: center left; 
+			padding: 10px;
+			width: 100px;
+			text-align: right;
+			font-size: 20px;
+			border: none;
+		}
+
+		#bX{
+			background-image: url('img/x.png');
+		}
+
+		#bO{
+			background-image: url('img/o.png');
+		}
+		
+		#mensaje{
+			font-family: fantasy;
+			font-size: 20px;
+		}
+		
+		.msg{
+			color: #70757c;
+			margin-top: 40px;
+		}
+		
+		.btn_restart{
+			margin-top: 40px;
+			background-color: #008CBA;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			
+		}
+	</style>
+	
+	
+	<script src="js/3_en_raya_js.js"></script>
+
+	<noscript>
+		<p>Tu navegador no soporta o tiene activado JavaScript.</p>
+		<p>Activelo si desea ver el contenido completo de la página.</p>
+	</noscript>
+
+</head>
+
+<body>
+
+	<h1>JUEGO DE 3 EN RAYA</h1>
+	
+	
+	
+	<div>
+		<button id="bX">-</button>
+		<button id="bO">-</button>
+	</div>
+
+	<div>
+		<p id="mensaje">Turno de <strong>X</strong></p>
+	</div>
+
+	<div id="contenedor1">
+	
+		<!-- FILA 1-->
+		<div id="cont1">
+		
+			<button class="bJuego" id="b0"></button>
+			<button class="bJuego" id="b1"></button>
+			<button class="bJuego" id="b2"></button>
+			
+		</div>
+		
+		<!-- FILA 2-->
+		<div id="cont2">
+			<button class="bJuego" id="b3"></button>
+			<button class="bJuego" id="b4"></button>
+			<button class="bJuego" id="b5"></button>
+		</div>
+		
+		<!-- FILA 3-->
+		<div id="cont3">
+			<button class="bJuego" id="b6"></button>
+			<button class="bJuego" id="b7"></button>
+			<button class="bJuego" id="b8"></button>
+		</div>
+	</div>
+
+	<p class="msg">
+		En empates, utilizar el botón de reiniciar partida
+	</p>
+	
+	<button class="btn_restart" id="reiniciar">Reiniciar partida</button>
+	
+</body>
+
+</html>
